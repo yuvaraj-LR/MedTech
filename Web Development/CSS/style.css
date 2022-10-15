@@ -1,0 +1,236 @@
+body {
+    font: 15px/1.5 Times New Roman bolder, Arial bolder, Andale Mono;
+    background-color: rgb(241, 224, 231);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General for all */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    height: 30px;
+    background: black;
+    border: 0;
+    padding: 0 20px 0 20px;
+    color: white;
+}
+
+.darkBg {
+    background-color: rgb(170, 40, 202);
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Heading */
+
+header {
+    background-color: magenta;
+    color: white;
+    border-bottom: #0e0c0c 5px solid;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brandName {
+    float: left;
+}
+
+header #brandName h1 {
+    margin: 0;
+}
+
+header nav {
+    padding-top: 10px;
+    float: right;
+}
+
+header a:hover {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.66);
+    color: #0e0c0c;
+}
+
+header .highlight,
+header .current a {
+    font-weight: bold;
+    color: #0e0c0c;
+}
+
+
+/* Content */
+
+
+/* Main Content */
+
+#mainContent {
+    background: url(../img/main2.jpg) no-repeat -300px;
+    color: white;
+    text-align: center;
+    min-height: 500px;
+}
+
+#mainContent h1 {
+    font-size: 55px;
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+
+#mainContent p {
+    font-size: 20px;
+}
+
+
+/* For connections */
+
+#toConnect {
+    background-color: magenta;
+}
+
+#toConnect h1 {
+    float: left;
+}
+
+#toConnect form {
+    float: right;
+}
+
+#toConnect input[type="email"] {
+    height: 15px;
+    color: black;
+    padding: 4px;
+    width: 250px;
+    margin: 19px;
+}
+
+
+/* Image and boxes */
+
+#tabulations {
+    margin-top: 20px;
+}
+
+#tabulations .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabulation .box img {
+    width: 90px;
+}
+
+
+/* About Us */
+
+
+/* Side Floating Bar */
+
+aside #sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+/* Main Content */
+
+article #main-col {
+    float: left;
+    width: 65%;
+}
+
+
+/* Services */
+
+ul #services li {
+    list-style: none;
+    padding: 20px;
+    border: solid #cccccc 3px;
+    background: rgb(170, 40, 202);
+    margin-bottom: 5px;
+}
+
+aside #sidebar .quote input,
+aside #sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #0e0c0c;
+    margin-top: 20px;
+}
+
+
+/* @Media-Queries */
+
+@media(max-width: 768px) {
+    header #brandName,
+    header nav,
+    header nav li,
+    #toConnect h1,
+    #toConnect form,
+    #tabulations .box,
+    article #main-col,
+    aside #sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #toConnect button .quote button {
+        display: block;
+        width: 100%;
+    }
+    #toConnect form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
